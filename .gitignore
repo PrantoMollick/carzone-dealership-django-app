@@ -1,0 +1,45 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Database files
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+
+# Environment-specific settings
+*.env
+
+# Log files
+*.log
+
+# Static files and media
+static/
+media/
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+
+# Local development settings
+local_settings.py
+
+# Configuration for development servers
+server_config.json
+
+# Secret keys and sensitive information
+secrets.yaml
+secrets.json
+
+# Ignore everything in migrations except __init__.py
+**/migrations/!(__init__).py
+
+# Ignore compiled JavaScript and CSS
+*.js.map
+*.css.map
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
