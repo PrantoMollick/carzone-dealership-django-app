@@ -1,0 +1,23 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+
+{% block branding %}
+    {% if request.user.is_superuser and settings.DJANGO_ADMIN_USE_DARK_MODE %}
+        <h1 id="head">
+            <a href="/admin"><img src="{% static 'img/logos/logo-black-white.png' %}" alt="Car-zone" class="brand_img" height="50" width="300"></a>
+        </h1>
+    {% else %}
+        <h1 id="head">
+            <a href="/admin"><img src="{% static 'img/logos/black-logo.png' %}" alt="Car-zone" class="brand_img" height="50" width="300"></a>
+        </h1>
+    {% endif %}
+
+{% endblock %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+
+
+
