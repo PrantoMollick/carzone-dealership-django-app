@@ -99,7 +99,10 @@ $(function () {
           $(".sticky-header").addClass("header-shrink");
         }
         if ($(".do-sticky").length < 1) {
-          $(".company-logo img").attr("src", "static/img/logos/black-logo.png");
+          $(".company-logo img").attr(
+            "src",
+            "../static/img/logos/black-logo.png"
+          );
         }
       } else {
         $(".sticky-header").removeClass("header-shrink");
@@ -108,13 +111,16 @@ $(function () {
           $(".fixed-header").length == 0 &&
           $(".fixed-header2").length == 0
         ) {
-          $(".company-logo img").attr("src", "static/img/logos/logo.png");
+          $(".company-logo img").attr("src", "../static/img/logos/logo.png");
         } else {
-          $(".company-logo img").attr("src", "static/img/logos/black-logo.png");
+          $(".company-logo img").attr(
+            "src",
+            "../static/img/logos/black-logo.png"
+          );
         }
       }
     } else {
-      $(".company-logo img").attr("src", "static/img/logos/black-logo.png");
+      $(".company-logo img").attr("src", "../static/img/logos/black-logo.png");
     }
   }
 
@@ -348,7 +354,7 @@ $(function () {
   // Background video playing script
   $(document).ready(function () {
     $(".player").mb_YTPlayer({
-      mobileFallbackImage: "static/img/banner/banner-1.jpg"
+      mobileFallbackImage: "img/banner/banner-1.jpg"
     });
   });
 
@@ -519,3 +525,7 @@ $(function () {
     })
     .trigger("resize");
 })(jQuery);
+
+setTimeout(() => {
+  $("#message").fadeOut("slow");
+}, 4000);
