@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'allcars.apps.AllcarsConfig',
     'pages.apps.PagesConfig',
+    'accounts.apps.AccountsConfig',
     'ckeditor',
     'multiselectfield',
     'django.contrib.humanize',
